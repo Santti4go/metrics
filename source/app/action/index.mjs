@@ -15,6 +15,13 @@ process.on("unhandledRejection", error => {
   throw error
 })
 
+// Get the input value of 'myage'
+const myAge = core.getInput('myage', { required: true });
+info("MY AGE: ", myAge)
+info("MY AGE: ", myAge)
+info("MY AGE: ", myAge)
+info("MY AGE: ", myAge)
+
 //Debug message buffer
 let DEBUG = true
 const debugged = []

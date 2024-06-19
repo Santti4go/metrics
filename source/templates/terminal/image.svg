@@ -55,6 +55,13 @@ Last generated: <%= meta.generated %>
 <% for (const partial of [...partials]) { %><%- await include(`partials/${partial}.ejs`) %><% } -%>
 <% if (base.metadata) { -%>
 
+sudo -ll
+User ${`${user.login}`.toLocaleLowerCase()} may run the following commands as root:
+Robotics
+Cybersecurity
+Maths
+
+
 <footer>Connection reset by <%= Math.floor(256*Math.random()) %>.<%= Math.floor(256*Math.random()) %>.<%= Math.floor(256*Math.random()) %>.<%= Math.floor(256*Math.random()) %></footer><%# -%>
 <% } -%></pre>
 
