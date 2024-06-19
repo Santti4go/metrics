@@ -92,6 +92,12 @@
     color: #4878c0;
   }
 
+  .ps1-path-v2 {
+    background-color: rgb(138, 228, 130);
+    color: #000000;
+    padding: 5px;
+  }
+
 /* Diff */
   .diff {
     color: #3A96DD;
