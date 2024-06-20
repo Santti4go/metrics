@@ -60,7 +60,7 @@ User ${`${user.login}`.toLocaleLowerCase()} may run the following commands as ro
 Robotics
 Cybersecurity
 Maths
-
+Age: ${user.my_age}
 
 <footer>Connection reset by <%= Math.floor(256*Math.random()) %>.<%= Math.floor(256*Math.random()) %>.<%= Math.floor(256*Math.random()) %>.<%= Math.floor(256*Math.random()) %></footer><%# -%>
 <% } -%></pre>
