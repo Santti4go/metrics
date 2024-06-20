@@ -53,7 +53,6 @@ Last generated: <%= meta.generated %>
 </div><% } -%>
 <% if (warnings.length) { %><div class="warnings"><%- warnings.map(({warning}) => `WARN: ${warning.message}`).join("<br/>") %></div><% } %><%# -%>
 <% for (const partial of [...partials]) { %><%- await include(`partials/${partial}.ejs`) %><% } -%>
-<% if (base.metadata) { -%>
 
 sudo -ll
 User ${`${user.login}`.toLocaleLowerCase()} may run the following commands as root:
@@ -62,6 +61,8 @@ Cybersecurity
 Maths
 Age: ${user.my_age}
 
+
+<% if (base.metadata) { -%>
 <footer>Connection reset by <%= Math.floor(256*Math.random()) %>.<%= Math.floor(256*Math.random()) %>.<%= Math.floor(256*Math.random()) %>.<%= Math.floor(256*Math.random()) %></footer><%# -%>
 <% } -%></pre>
 
