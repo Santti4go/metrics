@@ -19,13 +19,6 @@ inputs:
     type: token
     required: true
 
-  # CUSTOM CONTENT
-  my-age:
-    description: User age
-    type: string
-    required: true
-
-
   user:
     description: |
       GitHub username

@@ -4,7 +4,7 @@
 inputs:
   # ====================================================================================
   # CUSTOM CONTENT
-  my-age:
+  my_age:
     description: User age
     default: <default-value>
 

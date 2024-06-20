@@ -16,7 +16,7 @@ process.on("unhandledRejection", error => {
 })
 
 // Get the input value of 'my_age'
-const my_age = core.getInput('my-age', { required: true });
+const my_age = core.getInput('my_age', { required: true });
 info("MY AGE: ", my_age)
 info("MY AGE: ", my_age)
 info("MY AGE: ", my_age)
@@ -155,7 +155,7 @@ function quit(reason) {
       "clean.workflows": _clean_workflows,
       "github.api.rest": _github_api_rest,
       "github.api.graphql": _github_api_graphql,
-      myage: my_age,
+      my_age: my_age,
       ...config
     } = metadata.plugins.core.inputs.action({core, preset})
     const q = {...query, ...(_repo ? {repo: _repo} : null), template}
