@@ -17,10 +17,6 @@ process.on("unhandledRejection", error => {
 
 // Get the input value of 'my_age'
 const my_age = core.getInput('my_age', { required: true });
-info("MY AGE: ", my_age)
-info("MY AGE: ", my_age)
-info("MY AGE: ", my_age)
-info("MY AGE: ", my_age)
 
 //Debug message buffer
 let DEBUG = true
@@ -49,6 +45,13 @@ info.group = ({metadata, name, inputs}) => {
     info(metadata.plugins[name]?.inputs[input]?.description?.split("\n")[0] ?? metadata.plugins[name]?.inputs[input]?.description ?? input, `${input in preset ? "*" : ""}${value}`, {token: metadata.plugins[name]?.inputs[input]?.type === "token"})
 }
 info.break = () => console.log("─".repeat(88))
+
+// Debug info msg
+info("MY AGE: ", my_age)
+info("MY AGE: ", my_age)
+info("MY AGE: ", my_age)
+info("MY AGE: ", my_age)
+
 
 //Waiter
 async function wait(seconds) {
