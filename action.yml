@@ -2,6 +2,11 @@
 # Inputs and configuration
 
 inputs:
+  # ====================================================================================
+  # CUSTOM CONTENT
+  my-age:
+    description: User description
+    default: <default-value>
 
   # ====================================================================================
   # 🗃️ Base content
